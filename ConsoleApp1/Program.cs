@@ -31,23 +31,33 @@ namespace ConsoleApp1
                 Console.WriteLine($"4-es feladat: \t Az ókorbn felfedezett kémiai elemek száma: {Okor}");
 
                 //5 
-                string betujel = sr.ReadLine();
+               /* string betujel = sr.ReadLine();
                 while (true)
                 {
 
-                }
+                } */
 
                 //6
-                if (true)
+                Console.WriteLine("6-os feladat: ");
+                foreach (var item in ujlista)
                 {
                     int vegyjel = ujlista.Where(x => x.Vegyjel == "SG" && x.Vegyjel == "sg").Count();
-                    Console.WriteLine(${ });
+                    if (true)
+                    {
+                        Console.WriteLine($"Adatai:\t Éve:  {item.Ev} \t , Neve: {item.Nev} \t , Vegyjele: {item.Vegyjel} \t , Rendszáma: {item.Rendszam} \t , Felfedezője:  {item.Felfedezo} ");
+                    }
+
+                    else {
+
+                        Console.WriteLine("Nincs ilyen elem az adatforrásban!");
+                    
+                    }
+
                 }
-                 
-                   
-                
-                
-               
+
+                //7
+                Console.WriteLine("7-es feladat: ");
+
             }
         }
     }
